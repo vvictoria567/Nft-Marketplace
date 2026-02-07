@@ -46,6 +46,55 @@ body {
     max-width: 1050px;
     border: 1px solid red;
 }
+.section-padding {
+        padding-block: 80px; /*отступы сверху и снизу*/
+}
+.button {
+    border-radius: 20px;
+    color: var(--color-light);
+    padding-inline: 50px;
+    font-weight: var(--font-weight-semibold);
+    display: flex;
+    column-gap: 12px;
+}
+.button img {
+    width: 20px;
+    height: 20px;
+}
+.button_filled {
+    background-color: var(--color-filled );
+}
+.button_secondary {
+    padding-block: 20.5px;
+    font-size: var(--font-base);
+}
+.headline {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.heading-h3 {
+    font-size: var(--font-h3);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-sm);
+}
+.heading-h3_color-light,
+.heading-h5_color-light {
+    color: var(--color-light);
+}
+.heading-h5 {
+    font-size: var(--font-h5);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-lg);
+}
+.font-number {
+    font-family: "Space Mono", monospace;
+}
+
+
+
+
+
 .logo img{
     width: 243px;
     height: 32px;
@@ -75,26 +124,6 @@ body {
 }
 .scale:hover {
     transform: scale(0.95);
-}
-.button {
-    border-radius: 20px;
-    color: var(--color-light);
-    padding-inline: 50px;
-    font-weight: var(--font-weight-semibold);
-    display: flex;
-    column-gap: 12px;
-}
-.button img {
-    width: 20px;
-    height: 20px;
-}
-.button_filled {
-    background-color: var(--color-filled );
-}
-
-.button_secondary {
-    padding-block: 20.5px;
-    font-size: var(--font-base);
 }
 
 .hero__container {
@@ -143,3 +172,63 @@ body {
     font-size: 23.99px;
 }
 
+.headline__subhead {
+    color: var(--color-light);
+    font-size: var(--font-h5);
+    line-height: var(--line-height-xxl);
+}
+
+.trending-collection__collection {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.trending-collection__card {
+    
+}
+.trending-collection__primary-photo {
+    width: 330px;
+    height: 330px;
+    margin-bottom: 15px;
+}
+.photo_radius {
+    border-radius: 20px;
+}
+
+.trending-collection__additional-photos {
+    display: flex;
+    gap: 15px;
+}
+.trending-collection__additional-photo {
+    width: 100px;
+    height: 100px;
+}
+.trending-collection__number {
+    background-color: var(--color-filled);
+    color: var(--color-light);
+    font-size: var(--font-h5);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-xxl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trending-collection__info {
+    margin-top: 15px;
+}
+.artist-card {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.artist-card__photo {
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+}
+.artist-card__name {
+    font-size: var(--font-base);
+    line-height: var(--line-height-lg);
+    color: var(--color-light);
+}
