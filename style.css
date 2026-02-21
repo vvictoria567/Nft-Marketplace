@@ -289,3 +289,62 @@ body {
 }
 
 
+.categories__cards-wrapper {
+    margin-top: 60px;
+}
+.categories__card {
+    background-color: var(--color-secondary);
+    overflow: hidden; /*поместить внутрь блока, чтобы углов не было и было всё скруглено*/
+}
+.categories__name {
+    color: var(--color-light);
+    padding-top: 20px;
+    padding-bottom: 25px;
+    padding-left: 28px;
+}
+.categories__photo {
+    width: 240px;
+    height: 240px;
+    background-size: cover;
+    filter: blur(15px);/*фильтр для размытия фото*/
+}
+.categories__photo-wrapper:after { /*псевдоэлемент для наложения картинок*/
+    content: "";
+    background-image: url(img/PaintBrush.png);
+    background-size: contain;
+    position: absolute; /*обязательно для псевдоэлементов*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+}
+
+.categories__photo-wrapper {
+    overflow: hidden; 
+    position: relative;
+}
+.categories__card:nth-child(1) .categories__photo {
+    background-image: url(img/17c74acd5b5ba867000004883ee7944815a839d4.png);
+}
+.categories__card:nth-child(2) .categories__photo {
+    background-image: url(img/5abc712e766f194b46ede2b0f9edcb91b3031413.png);
+}
+.categories__card:nth-child(3) .categories__photo {
+    background-image: url(img/959bc7d45f17e9b726f61f6cfc0519d7f88e673c.png);
+}
+.categories__card:nth-child(4) .categories__photo {
+    background-image: url(img/121cdda3402804d9f103b0d623fd05724eb36ad4.png);
+}
+.categories__card:nth-child(5) .categories__photo {
+    background-image: url(img/d708098d95de438163a608988f293d376aed4b32.png);
+}
+.categories__card:nth-child(6) .categories__photo {
+    background-image: url(img/860e12a6f05337d9fd7c4b9443e910339f5ee0df.png);
+}
+.categories__card:nth-child(7) .categories__photo {
+    background-image: url(img/7fd949cbad8f0cc76ced9954479f4bd6131e073b.png);
+}
+.categories__card:nth-child(8) .categories__photo {
+    background-image: url(img/67e1f6fee50c7ead5b8ab11fc9ca9b560fadd34e.png);
+}
