@@ -44,7 +44,7 @@ body {
 .container {
     margin: 0 auto;
     max-width: 1050px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .section-padding {
         padding-block: 80px; /*отступы сверху и снизу*/
@@ -64,11 +64,22 @@ body {
 .button_filled {
     background-color: var(--color-filled );
 }
+.button_outline {
+    border: 2px solid var(--color-filled);
+}
+
 .button_secondary {
     padding-block: 20.5px;
     font-size: var(--font-base);
 }
+
+
 .headline {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.headline__wrapper {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -91,7 +102,11 @@ body {
     font-family: "Space Mono", monospace;
 }
 
-
+.flex-cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
 
 
 
@@ -232,3 +247,45 @@ body {
     line-height: var(--line-height-lg);
     color: var(--color-light);
 }
+
+.top-rated-artists__cards {
+    margin-top: 60px;
+
+}
+.top-rated-artists__avatar {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+}
+.top-rated-artists__card {
+    background-color: var(--color-secondary);
+    width: 240px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+.top-rated-artists__additional-info {
+    margin-top: 5px;
+}
+.top-rated-artists__label {
+    color: var(--color-caption);
+    line-height: var(--line-height-lg);
+}
+.top-rated-artists__price {
+    color: var(--color-light);
+    line-height: var(--line-height-lg);
+}
+.top-rated-artists__ranking-number {
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: var(--color-dark);
+    color: var(--color-caption);
+    line-height: 30px;
+}
+
+
