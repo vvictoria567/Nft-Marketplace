@@ -502,7 +502,7 @@ body {
     position: relative;
 }
 .form-subscribe__field {
-    padding-block: 19px;
+    padding-block: 18px;
     padding-left: 20px;
     padding-right: 223px; /*вводимый текст не заходил за кнопку*/
     width: 100%; /*на всю ширину секции растянули*/
@@ -517,4 +517,55 @@ body {
     top: 0;
     border: none;
     cursor: pointer;
+}
+
+
+
+
+.footer {
+    background-color: var(--color-secondary);
+}
+.footer__info {
+    padding-inline: 29.29px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_additional-info {
+    margin-top: 30px;
+    width: 238px;
+}
+.footer__text {
+    color: #ccc;
+    line-height: var(--line-height-lg);
+}
+.footer__join {
+    margin-top: 20px;
+}
+.footer__social-links {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+.footer__nav {
+    margin-top: 25px;
+}
+.footer__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer__subscribe-wrappet {
+    margin-top: 25px;
+}
+.footer__subscribe-text {
+    width: 330px;
+    margin-bottom: 20px;
+}
+
+.footer__copy {
+    border-top: 1px solid #8585;
+    line-height: var(--line-height-xs);
+    font-size: var(--font-caption);
+    padding-top: 20px;
+    margin-top: 30px;
 }
