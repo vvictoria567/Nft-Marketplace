@@ -471,3 +471,50 @@ body {
     gap: 5px;
 }
 
+
+
+
+
+.promotion__wrapper {
+    background-color: var(--color-secondary);
+    padding: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.promotion__info {
+    width: 425px;
+}
+.promotion__image {
+    width: 425px;
+    height: 310px;
+    object-fit: cover;
+}
+.promotion__headline {
+    margin-bottom: 40px;
+}
+.promotion__subhead {
+    color: var(--color-light);
+    font-size: var(--font-h5);
+    line-height: var(--line-height-xxl);
+    margin-top: 10px;
+}
+.form-subscribe {
+    position: relative;
+}
+.form-subscribe__field {
+    padding-block: 19px;
+    padding-left: 20px;
+    padding-right: 223px; /*вводимый текст не заходил за кнопку*/
+    width: 100%; /*на всю ширину секции растянули*/
+    line-height: var(--line-height-lg);
+    font-size: var(--font-base);
+    border: none;
+    outline: none;
+}
+.form-subscribe__button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    cursor: pointer;
+}
