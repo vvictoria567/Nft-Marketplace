@@ -67,10 +67,15 @@ body {
 .button_outline {
     border: 2px solid var(--color-filled);
 }
-
 .button_secondary {
     padding-block: 20.5px;
     font-size: var(--font-base);
+}
+.button_filled-light {
+    background-color: var(--color-light);
+}
+.button__text_color-dark {
+    color: var(--color-dark);
 }
 
 
@@ -84,11 +89,17 @@ body {
     flex-direction: column;
     gap: 10px;
 }
+.heading-h2 {
+    font-size: var(--font-h2);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-xs);
+}
 .heading-h3 {
     font-size: var(--font-h3);
     font-weight: var(--font-weight-semibold);
     line-height: var(--line-height-sm);
 }
+.heading-h3_color-light,
 .heading-h3_color-light,
 .heading-h5_color-light {
     color: var(--color-light);
@@ -97,6 +108,9 @@ body {
     font-size: var(--font-h5);
     font-weight: var(--font-weight-semibold);
     line-height: var(--line-height-lg);
+}
+.heading-h5_mb {
+    margin-bottom: 5px;
 }
 .font-number {
     font-family: "Space Mono", monospace;
@@ -348,3 +362,112 @@ body {
 .categories__card:nth-child(8) .categories__photo {
     background-image: url(img/67e1f6fee50c7ead5b8ab11fc9ca9b560fadd34e.png);
 }
+
+
+
+.discover__cards-wrapper {
+    margin-top: 60px;
+}
+.discover__image {
+    width: 330px;
+    height: 296px;
+    object-fit: cover;
+}
+.discover__card {
+    overflow: hidden;
+}
+
+.discover__info {
+    color: var(--color-secondary);
+    padding: 20px 30px;
+}
+
+.discover__additional-info {
+    margin-top: 25px;
+}
+.discover__label {
+    color: var(--font-caption);
+    font-size: var(--font-caption);
+    line-height: var(--line-height-xs);
+}
+.discover__price {
+    color: var(--color-light);
+    line-height: var(--line-height-lg);
+}
+.discover__additional-info {
+    display: flex;
+    justify-content: space-between;
+}
+.discover__additional-info-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+
+.highlight {
+    background: linear-gradient(#a159ff00, #A259ff), url(img/a6f43f9350c73503d13e1fe1a0e3277804ef1192.png);
+    padding-top: 360px;
+    padding-bottom: 60px;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position-y: center;
+}
+.highlight__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; /*задаем высоту контейнера*/
+}
+.highlight__button {
+    align-self: flex-start;
+}
+.artist-card_background-dark {
+    background-color: var(--color-secondary);
+}
+.highlight__artist {
+    align-self: flex-start;
+}
+.highlight__artist-card {
+    padding: 11px 20px;
+    align-self: flex-start; /*!!!!*/
+}
+.highlight__info-artist {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.highlight__auction-timer {
+    background-color: rgb(59, 59, 59, 0.5);
+    padding: 30px;
+    color: var(--color-light);
+    /* filter: blur(10px); */
+}
+.highlight__timer {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    backdrop-filter: blur(10px); /*блюр чисто заднего фона, не затрагивая весь контент*/
+}
+.highlight__label,
+.highlight__number-label {
+    font-size: var(--font-caption);
+    line-height: var(--line-height-xs);
+}
+.highlight__number {
+    font-size: var(--font-h3);
+    line-height: var(--line-height-sm);
+    font-weight: var(--font-weight-bold);
+}
+.highlight__divider {
+    font-size: var(--font-h4);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-lg);
+}
+.highlight__time {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
